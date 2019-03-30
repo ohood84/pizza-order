@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pizza Website</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>pizza</h2>
+      </div>
+      <form id="pizza-top">
+        <div class="form-group">
+          <p>Choose a Size</p>
+                  <input type="radio" name="size" value="s">Mini(6-inch pizza)($6.00)
+                  <input type="radio" name="size" value="m">Med(11-inch pizza)($8.00)
+                  <input type="radio" name="size" value="l">Large(15-inch pizza)($10.00)<br><br>
+        </div>
+        <div class="form-group">
+          <p>Choose a Sauce</p>
+                  <input type="checkbox" name="sauce" value="walk">BBQ Sauce
+                  <input type="checkbox" name="Sauce" value="bus">Pesto
+                  <input type="checkbox" name="sauce" value="train">Red Sauce
+                  <input type="checkbox" name="sauce" value="streetcar">Olive Oil<br><br>
+
+          <p>Choose Meat</p>
+                  <input type="checkbox" name="meat" value="GrilledChicken">Grilled Chicken
+                  <input type="checkbox" name="meat" value="GroundBeef">Ground Beef .
+                  <input type="checkbox" name="meat" value="SpicyChicken">Spicy Chicken.
+                  <input type="checkbox" name="meat" value="salami">Salami.<br><br>
+
+          <p>Choose Veggies, Herbs & Good Stuff :</p>
+                  <input type="checkbox" name="Veggies" value="Artichokes">Artichokes
+                  <input type="checkbox" name="Veggies" value="Basil">Basil - Fresh Chopped
+                  <input type="checkbox" name="Veggies" value="Arugula">Arugula
+                  <input type="checkbox" name="Veggies" value="blackolives">Black Olives
+                  <input type="checkbox" name="Veggies" value="mushroom">Mushrooms
+                  <input type="checkbox" name="Veggies" value="tommato">Tommato
+                  <input type="checkbox" name="Veggies" value="saltandpeper">Salt & Pepper
+                  <input type="checkbox" name="Veggies" value="Pineapple">Pineapple<br><br>
+
+         Name:<input  type="text"><br><br>
+
+
+
+
+    <button type="submit">add to cart</button>
+   </form>
+   <span id="pizza-orders">
+     <p><b>Your orders is:</b></p>
+   </span>
+ </div>
+</body>
+</html>
