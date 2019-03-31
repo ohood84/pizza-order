@@ -15,28 +15,35 @@
       <h1>Creat Your Own Pizza</h1>
       <form id="pizza-top">
         <div class="form-group">
-          <p>Choose a Size:</p>
-                  <input type="radio" name="size" value="s">Mini(6-inch pizza)($6.00)
-                  <input type="radio" name="size" value="m">Med(11-inch pizza)($8.00)
-                  <input type="radio" name="size" value="l">Large(15-inch pizza)($10.00)<br><br>
+          <p><b>Choose a Size:</b></p>
+                  <input type="radio" name="size" value="Small">Mini(6-inch pizza)($6.00)
+                  <input type="radio" name="size" value="Medium">Med(11-inch pizza)($8.00)
+                  <input type="radio" name="size" value="Large">Large(15-inch pizza)($10.00)<br><br>
         </div>
         <div class="form-group">
-          <p>Choose a Sauce</p>
+          <p><b>Choose a Sauce</b></p>
                   <input type="checkbox" name="sauce" value="BBQ Sauce">BBQ Sauce
                   <input type="checkbox" name="sauce" value="Pesto">Pesto
                   <input type="checkbox" name="sauce" value="Red Sauce">Red Sauce
                   <input type="checkbox" name="sauce" value="Olive Oil">Olive Oil<br><br>
         </div>
        <div class="form-group">
-          <p>Choose Meat</p>
+          <p><b>Choose Meat</b></p>
                   <input type="checkbox" name="meat" value="Grilled Chicken">Grilled Chicken
                   <input type="checkbox" name="meat" value="Ground Beef">Ground Beef .
                   <input type="checkbox" name="meat" value="Spicy Chicken">Spicy Chicken.
                   <input type="checkbox" name="meat" value="salami">Salami.<br><br>
        </div>
        <div class="form-group">
+          <p><b>Choose sheese</b></p>
+                  <input type="checkbox" name="sheese" value="Mozzarella">Mozzarella
+                  <input type="checkbox" name="sheese" value="Feta">Feta
+                  <input type="checkbox" name="sheese" value="Riccota">Ricotta
+                  <input type="checkbox" name="sheese" value="Parmesan">Parmesan<br><br>
+       </div>
+       <div class="form-group">
 
-          <p>Choose Veggies, Herbs & Good Stuff :</p>
+          <p><b>Choose Veggies, Herbs & Good Stuff :</b></p>
                   <input type="checkbox" name="Veggies" value="Artichokes">Artichokes
                   <input type="checkbox" name="Veggies" value="Basil">Basil - Fresh Chopped
                   <input type="checkbox" name="Veggies" value="Arugula">Arugula
@@ -46,6 +53,7 @@
                   <input type="checkbox" name="Veggies" value="salt & peper">Salt & Pepper
                   <input type="checkbox" name="Veggies" value="Pineapple">Pineapple<br><br>
           </div>
+          Quantity:<input  type="text" id="quantity" value="1"><br><br>
 
          Name:<input  type="text" id="name"><br><br>
 
@@ -54,8 +62,9 @@
 
     <button type="submit" id="addpizza">add to cart</button>
    </form>
+   <button type="text" id="order-more">order another pizza</button>
    <div id="pizza-orders">
-     <p><b>Your orders is:</b></p>
+     <p><b>Order Contents :</b></p>
    </div>
  </div>
 </body>
