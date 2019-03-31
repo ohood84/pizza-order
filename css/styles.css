@@ -17,6 +17,7 @@ align: center;
     background-color: #f2e6d9;
    margin: auto;
    padding-bottom: 200px;
+   text-align: center;
 
 
 }
@@ -64,7 +65,7 @@ h4{
 }
 
 .jumbotron{
-  background-color: black;
+  /* background-color: black; */
   color: White;
 
 }

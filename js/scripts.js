@@ -1,141 +1,85 @@
+
+// function  PizzaOrders(){
+//   var pizzas=[];
+//   var name;
+// }
+//
+// PizzaOrders.prototype.addPizza=function(pizza){
+//   this.pizzas.push(pizza);
+//
+// }
+
+function Pizza(){
+  var toppingSauce=[];
+  var toppingVeggi=[];
+  var toppingMeat=[];
+  var size;
+
+}
+
+
+Pizza.prototype.addToppingandSize=function(userMeatTopping ,userSauceTopping,userVeggiTopping,size){
+  this.toppingSauce=userSauceTopping;
+  this.toppingVeggi=userVeggiTopping;
+  this.toppingMeat=userMeatTopping;
+  this.size;
+}
+
+// Pizza.prototype.textTopping=function(){
+  // $("#pizza-order").append("topping your pizza");
+  // $("this.toppingMeat").each(function(meat){
+  //   var meat = $(this).vals();
+  //   userMeatTopping.push(meat);
+  // });
+
+// }
+
 $(document).ready(function(){
+  var userSauceTopping=[];
+  var userVeggiTopping=[];
+  var userMeatTopping=[];
+  var name,size;
 
-  var counter1=0,counter2=10,number;
-  var pingpongarray=[];
-   $(".rules").hover(
-     function(){
-       $(".rulesshow").slideDown();
-     },
-     function(){
-        $(".rulesshow").slideUp();
+ // var userPizzaOrders= new PizzaOrders();
+$("#pizza-orders").append("topping your pizza");
 
-     }
-   );
+     $("form#pizza-top").submit(function(event){
+        // $("#pizza-orders").append("hello");
+        // alert("hello");
+      $("input:checkbox[name=sauce]:checked").each(function(){
+        var sauce1 = $(this).val();
+        userSauceTopping.push(sauce1);
+        $("#pizza-orders").append(sauce1+"<br>");
+      });
 
+      $("input:checkbox[name=meat]:checked").each(function(){
+        var meat1= $(this).val();
+        userMeatTopping.push(meat1);
+        $("#pizza-orders").append(meat1+"<br>");
+      });
 
-    $("#pingpong").click(function(event){
-      counter1=0,counter2=10;
-      pingpongarray=[];
-      $("#result").empty();
-      $("#next").hide();
-      $("#prev").hide();
+      $("input:checkbox[name=Veggies]:checked").each(function(){
+        var veggi = $(this).val();
+        userVeggiTopping.push(veggi);
+        $("#pizza-orders").append(veggi+"<br>");
+      });
 
-      number=parseInt($("input#number").val());
-
-      pingpong(number);
-
-      if(number>10){
-        $("#next").show();
-        printarray();
-        counter1+=10;
-
-      }
-      else{
-        counter2=number;
-        printarray();
-      }
-
-     event.preventDefault();
-
-    });
+      name=$("input#name").val();
+      size=$("input:radio[name=size]:checked").val();
 
 
+      var userPizza=new Pizza();
+       userPizza.addToppingandSize(userMeatTopping ,userSauceTopping,userVeggiTopping,size);
 
-    $("#next").click(function(){
-
-        if((number-counter2)>=10){
-          counter1=counter2;
-          counter2+=10;
-          $("#next").show();
-          $("#prev").show();
-
-          }
-        else{
-          counter1=counter2;
-          counter2+=(number-counter2);
-          $("#next").hide();
-          $("#prev").show();
-         }
-
-        printarray();
-
+      // userPizzaOrders.addPizza(userPizza);
+      event.preventDefault();
 
     });
 
-    $("#prev").click(function(){
-
-     if((counter2-counter1)>=10){
-          counter1-=10;
-          counter2-=10;
-          $("#next").show();
-          if(counter1===0)
-          {
-            $("#prev").hide();
-          }
-           else{
-
-               $("#prev").show();}
-           }
-     else{
-
-          counter2-=(counter2-counter1);
-           counter1-=10;
-          $("#next").show();
-
-           $("#prev").show();
-
-        }
-      printarray();
-    });
-
-    $("#result").slideDown();
 
 
 
-      var pingpong=function(number){
-        for(var index=1;index<=number;index++){
-          findpingpong(index);
-        }
-      };
 
 
-
-       var findpingpong =function(num){
-            if((num%3===0)&&(num%5===0)){
-             $("pingpongclass").show();
-             pingpongarray[num]="pingpong";
-               }
-             else if (((num%3)===0)){
-
-               pingpongarray[num] ="ping";
-             }
-              else if (((num%5)===0)){
-
-                   pingpongarray[num]="pong";
-                }
-               else{
-
-                   pingpongarray[num]=num;
-               }
-      };
-
-      var printarray=function(){
-        $("#result").empty();
-        for (var i=counter1+1;i<=counter2;i++){
-          $("ul#result").append("<li>"+pingpongarray[i]+"</li>");
-          if(pingpongarray[i]==="ping"){
-              $("li").last().addClass("ping");
-          }
-          else if(pingpongarray[i]==="pong"){
-              $("li").last().addClass("pong");
-          }
-          else if(pingpongarray[i]==="pingpong"){
-               $("li").last().addClass("pingpong");
-               
-          }
-
-        }
-      }
-
-
-    });
+    // $("#result").slideDown();
+   });
