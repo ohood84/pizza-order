@@ -1,0 +1,102 @@
+/* html{
+  position:relative;
+  background-image:url("pizza.jpg");
+
+  background-color:white;
+
+} */
+/* img{
+border-radius: 50%;
+align: center; */
+
+/* } */
+#buttonsjumb{
+  width:320px;
+}
+ body{
+   background-image:url("C:\Users\User\desktop\pizza-order\pizza.jpg");
+
+   /* border-radius: 50%;
+   border: 30px solid  white;
+    background-color: #f2e6d9;
+   margin: auto;
+   padding-bottom: 200px;
+   text-align: center; */
+
+
+}
+.centered-button{
+  align:center;
+}
+h4{
+  color:yellow;
+}
+#pingpong{
+ color:white;
+ background-color: black;
+ border-radius: 50%;
+
+}
+#fire{
+  display:none;
+}
+#next,#prev{
+  display:none;
+  align-self: center;
+  color: white;
+  background-color: gold;
+  border-radius: 50%;
+}
+.centered{
+   position: absolute;
+   top:70%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+
+ }
+  #cont1{
+   position:relative;
+   color:white;
+   text-align: center;
+   align:center;
+
+ }
+.header
+{
+  position:relative;
+  text-align: center;
+  color: White;
+}
+
+.jumbotron{
+  /* background-color: black; */
+  color: White;
+
+}
+.rules{
+  cursor: pointer;
+  color: orange;
+}
+.rules:hover{
+  text-decoration:underline;
+
+}
+.rulesshow{
+  display:none;
+}
+
+.ping{
+  color: blue;
+}
+
+.pong{
+color: green;
+}
+
+.pingpong{
+  color:red;
+}
+#aboutpingpong{
+  border-radius:20% 40%;
+
+}
