@@ -1,10 +1,10 @@
-html{
+/* html{
   position:relative;
-  /* background-image:url("pizza.jpg"); */
+  background-image:url("pizza.jpg");
 
   background-color:white;
 
-}
+} */
 h1{
   font-family: cursive;
   font-size: 80px;
@@ -42,7 +42,22 @@ width:100%;
 h4{
   color:yellow;
 }
+#pingpong{
+ color:white;
+ background-color: black;
+ border-radius: 50%;
 
+}
+#fire{
+  display:none;
+}
+#next,#prev{
+  display:none;
+  align-self: center;
+  color: white;
+  background-color: gold;
+  border-radius: 50%;
+}
 .centered{
    position: absolute;
    top:8px;
@@ -64,20 +79,35 @@ h4{
   color: White;
 }
 
-/* .jumbotron{ */
+.jumbotron{
   /* background-color: black; */
-  /* color: White;
+  color: White;
 
 }
-
-#pizza-orders{
-   cursor: pointer;
+.rules{
+  cursor: pointer;
   color: orange;
 }
-#pizza-orders:hover{
+.rules:hover{
   text-decoration:underline;
 
-} */
-#pizza-topping{
+}
+.rulesshow{
   display:none;
- }
+}
+
+.ping{
+  color: blue;
+}
+
+.pong{
+color: green;
+}
+
+.pingpong{
+  color:red;
+}
+#aboutpingpong{
+  border-radius:20% 40%;
+
+}

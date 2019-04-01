@@ -69,30 +69,13 @@ h4{
   color: White;
 
 }
-.rules{
-  cursor: pointer;
-  color: orange;
-}
-.rules:hover{
-  text-decoration:underline;
-
-}
-.rulesshow{
+#pizza-orders{
   display:none;
 }
+/* #pizza-orders:hover{
+  text-decoration:underline; */
 
-.ping{
-  color: blue;
 }
-
-.pong{
-color: green;
-}
-
-.pingpong{
-  color:red;
-}
-#aboutpingpong{
-  border-radius:20% 40%;
-
+#pizza-topping{
+  display:none;
 }
